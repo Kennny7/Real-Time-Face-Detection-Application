@@ -13,7 +13,8 @@ Welcome to the **Real-Time Face Detection Application**! This project leverages 
 
 ## Project Structure
 
-face-detection-project/
+```
+Real Time Face Detection Application/
 ├── face_detection.py
 ├── .gitignore
 ├── LICENSE
@@ -22,7 +23,7 @@ face-detection-project/
 ├── face_detection.log
 └── .vscode/
 └── .ipynb_checkpoints/
-
+```
 
 - `face_detection.py`: The main script for real-time camera input and face detection.
 - `requirements.txt`: Contains all the necessary dependencies.
