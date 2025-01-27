@@ -1,39 +1,54 @@
-# Real-Time Face Detection Application
+# Maskify - Real-Time Mask Detection
 
-## Project Overview
+Maskify is a real-time face mask detection application using a webcam. The application identifies faces in video frames and determines whether the detected faces are wearing masks, providing a visual overlay to indicate the mask status. This tool can be particularly useful in public safety and health scenarios.
 
-Welcome to the **Real-Time Face Detection Application**! This project leverages OpenCV and dlib to capture video input from your camera, detect faces in real-time, and log detailed information about each detected face. Designed with a focus on performance and reliability, it offers seamless integration with computer cameras, efficient face detection algorithms, and robust logging to help debug any issues. Whether you're exploring face detection or just want to experiment with OpenCV and dlib, this project serves as a solid foundation for your computer vision endeavors.
+## Features
+- Detects faces in real-time using a webcam.
+- Supports integration with a pre-trained mask detection model.
+- Annotates frames with the mask status of detected faces (e.g., "Mask" or "No Mask").
+- Real-time face count display.
+- Easy-to-understand logs for debugging and analysis.
 
-### Key Features
+## Technologies Used
+- **Python**: Programming language for building the application.
+- **TensorFlow**: For building and deploying machine learning models, including deep learning algorithms.
+- **OpenCV**: Library for real-time computer vision tasks.
+- **dlib**: Library for facial detection.
+- **NumPy**: For efficient array manipulations.
+- **Logging**: For application event tracking.
 
-- **Real-Time Face Detection:** Detects multiple faces simultaneously with high accuracy.
-- **Robust Logging:** Logs detected face coordinates and any errors encountered in `face_detection.log`.
-- **Error Handling:** Ensures that any issues during frame capture and processing are logged for troubleshooting.
-- **Scalability:** Easily extendable for more advanced features like facial recognition, emotion detection, and tracking.
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/maskify.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd maskify
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(Note: The requirements.txt file should include OpenCV, dlib, and NumPy.)*
+
+4. Run the application:
+   ```bash
+   python maskify_project.py
+   ```
+
+5. Press 'q' to quit the application.
 
 ## Project Structure
+- **maskify_project.py**: Main application script.
+- **maskify.log**: Log file generated during application runtime.
 
-```
-Real Time Face Detection Application/
-├── face_detection.py
-├── .gitignore
-├── LICENSE
-├── README.md
-├── requirements.txt
-├── face_detection.log
-└── .vscode/
-└── .ipynb_checkpoints/
-```
+## Usage Notes
+- Replace the `mask_model` placeholder with your pre-trained mask detection model for full functionality.
+- Ensure your webcam is functional and properly configured.
 
-- `face_detection.py`: The main script for real-time camera input and face detection.
-- `requirements.txt`: Contains all the necessary dependencies.
-- `.gitignore`: Lists files and directories that should be ignored by Git (e.g., log files, notebooks).
-- `face_detection.log`: Log file storing all detection and application status messages.
+## Contribution
+Feel free to fork the repository and make contributions. Create a pull request for any feature improvements or bug fixes.
 
-### How to Run the Project
-
-1. **Clone the Repository**  
-   Clone the project repository to your local machine.
-   ```bash
-   git clone https://github.com/Kennny7/Real-Time-Face-Detection-Application.git
-   cd Real-Time-Face-Detection-Application
+## License
+This project is licensed under the [MIT License](LICENSE).
